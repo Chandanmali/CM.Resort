@@ -1,0 +1,255 @@
+/*CSS Resate*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variavles */
+:root{
+    --navbar-height: 59px;
+
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+
+}
+/*  Navigation Bar: Logo and image */
+
+#logo{
+    margin: 10px 34px;
+    
+}
+#logo img{
+    width: 73px;
+    height: 59px;
+    margin: 3px 6px;
+    border-radius: 20px;
+}
+/*  Navigation Bar: list style */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Bree Serif', serif;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;                        /*for removing underline*/
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: cyan;                      
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 36px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 630px;
+}
+
+#home::before{
+    content: "";
+     background: url('https://images.thrillophilia.com/image/upload/s--_OIYPAr8--/c_fill,g_center,h_642,q_auto,w_1280/f_auto,fl_strip_profile/v1/images/photos/000/149/548/original/1553664762_Untitled.png.jpg') no-repeat center center/cover; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+    /* border: 2px solid gray;
+    background-color: cyan; */
+
+
+}
+#home h1:hover{
+    border: 2px solid gray;
+    color: black;
+    background-color: cyan;
+    border-radius: 20px;
+    
+    
+    
+}
+#home p{
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+   
+}
+/* services section */
+#sevrices{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 3px solid #b42020;
+    width: 1296px;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 23px auto;
+    background-color: #f0e5d7;
+}
+
+#services .box img{
+    height: 336px;
+    width: 1175px;
+    margin: auto;
+    display: block;
+}
+#services .box p{font-family: cursive;}
+#services{}
+#services{}
+#services{}
+
+/* Client section */
+#client-section{
+    height: 344px;
+    
+}
+
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url('/img/pexels-oleg-magni-2058130.jpg') no-repeat center center/cover; 
+   
+   width: 100%;
+   height: 65%;
+   z-index: -1;
+   opacity: 0.5;
+   
+    
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#clients img{
+    height: 150px;
+    border-radius: 60px;
+    margin: 15px;
+
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('/img/pexels-snapwire-618613.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+     width: 100%;
+     padding: 0.5rem;
+     border-radius: 9px;
+     font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-size: 2.3rem;
+    font-family: 'Bree Serif', serif;
+
+
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* Utility class */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.2rem;
+    padding: 21px;
+    margin: 13px;
+   
+
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;   
+}
+.btn:hover{
+
+}
+.center{
+    text-align: center;
+}
+audio{
+    height: 15px ;
+    margin: -13px 65px;
+    width: 97px; 
+
+}
+body{
+    background-color: rgb(224 246 254);
+}
+
+
